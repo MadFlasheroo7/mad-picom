@@ -645,7 +645,7 @@ double win_calc_opacity_target(session_t *ps, const struct managed_win *w, bool 
 	}
 
 	// respect inactive override
-	if (ps->o.inactive_opacity_override && !w->focused) {
+	if (ps->o.inactive_opacity_override && !win_is_focused_raw(ps, w)->focused) {
 		opacity = ps->o.inactive_opacity;
 	}
 
