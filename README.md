@@ -1,3 +1,6 @@
+# What's changed?
+Patched an issue where incorrect opacity was being applied to inactive window
+
 picom
 =======
 
